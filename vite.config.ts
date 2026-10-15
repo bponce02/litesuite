@@ -1,4 +1,5 @@
 import { defineConfig } from "vite-plus";
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default defineConfig({
   root: "src/frontend",
@@ -8,4 +9,9 @@ export default defineConfig({
     rules: { "vite-plus/prefer-vite-plus-imports": "error" },
     options: { typeAware: true, typeCheck: true },
   },
+  plugins: [
+    svelte({
+      // plugin options
+    })
+  ],
 });
