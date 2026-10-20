@@ -1,4 +1,4 @@
-module changeme
+module github.com/bponce/litesuite
 
 go 1.26.0
 
